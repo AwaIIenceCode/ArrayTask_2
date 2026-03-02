@@ -56,6 +56,7 @@ function writingOddNumbersArray(oddNumbersArray)
 {
     console.log(`\nYour odd numbers array => ${oddNumbersArray.join(", ")}`);
 }
+
 // function for find sum even numbers in an array
 function findSumEvenNumbersInArray(evenNumbersArray)
 {
@@ -70,15 +71,9 @@ function findSumEvenNumbersInArray(evenNumbersArray)
 }
 
 // function for writing sum even numbers in an array
-function writingSumEvenNumbers()
+function writingSumEvenNumbers(sumInEvenNumbersArray)
 {
-
-}
-
-// function for writing sum odd numbers in an array
-function writingSumOddNumbers()
-{
-    
+    console.log(`\nSum even numbers in an array =>${sumInEvenNumbersArray}`);
 }
 
 // function for find sum odd numbers in an array
@@ -92,6 +87,12 @@ function findSumOddNumbersInArray(oddNumbersArray)
     }
 
     return sumInOddNumbersArray;
+}
+
+// function for writing sum odd numbers in an array
+function writingSumOddNumbers(sumInOddNumbersArray)
+{
+    console.log(`\nSum odd numbers in an array => ${sumInOddNumbersArray}`);
 }
 
 function main()
@@ -109,10 +110,10 @@ function main()
     writingOddNumbersArray(oddNumbersInArray);
 
     const sumEvenNumbersInArray = findSumEvenNumbersInArray(evenNumbersInArray);
-    console.log(`\nSum even numbers in an array => ${sumEvenNumbersInArray}`);
+    writingSumEvenNumbers(sumEvenNumbersInArray);
 
     const sumOddNumbersInArray = findSumOddNumbersInArray(oddNumbersInArray);
-    console.log(`\nSum odd numbers in an array => ${sumOddNumbersInArray}`);
+    writingSumOddNumbers(sumOddNumbersInArray);
 }
 
 main();
