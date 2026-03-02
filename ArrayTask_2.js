@@ -10,7 +10,7 @@ function createArray(userArr, min, max)
 // function for show numbers in an array
 function writingArray(userArr)
 {
-    console.log(userArr.join(", "));
+    console.log(`\nYour full array => ${userArr.join(", ")}`);
 }
 
 // function for search even numbers in an array
@@ -32,7 +32,7 @@ function filtreEvenNumbersInArray(userArr)
 // function for show even numbers in an array
 function writingEvenNymbersArray(evenNumbersArray)
 {
-    console.log(evenNumbersArray.join(", "));
+    console.log(`\nYour even numbers array => ${evenNumbersArray.join(", ")}`);
 }
 
 // function for search odd numbers in an array
@@ -54,12 +54,12 @@ function filtreOddNumbersInArray(userArr)
 // function for show odd numbers in an array
 function writingOddNumbersArray(oddNumbersArray)
 {
-    console.log(oddNumbersArray.join(", "));
+    console.log(`\nYour odd numbers array => ${oddNumbersArray.join(", ")}`);
 }
 // function for find sum even numbers in an array
 function findSumEvenNumbersInArray(evenNumbersArray)
 {
-    let sumInEvenNumbersArray;
+    let sumInEvenNumbersArray = 0;
 
     for (let i = 0; i < evenNumbersArray.length; i++)
     {
@@ -69,10 +69,22 @@ function findSumEvenNumbersInArray(evenNumbersArray)
     return sumInEvenNumbersArray;
 }
 
+// function for writing sum even numbers in an array
+function writingSumEvenNumbers()
+{
+
+}
+
+// function for writing sum odd numbers in an array
+function writingSumOddNumbers()
+{
+    
+}
+
 // function for find sum odd numbers in an array
 function findSumOddNumbersInArray(oddNumbersArray)
 {
-    let sumInOddNumbersArray;
+    let sumInOddNumbersArray = 0;
 
     for (let i = 0; i < oddNumbersArray.length; i++)
     {
@@ -89,18 +101,18 @@ function main()
 
     createArray(userArr, -100, 100);
     writingArray(userArr);
-    
-    const evenNumbersInArray =  filtreEvenNumbersInArray(userArr);
-    console.log(`Array with only even numbers => ${evenNumbersInArray}`);
 
-    const oddNumbersInArray = filtreOddNumbersInArray(userArr);
-    console.log(`Array with only odd numbers => ${oddNumbersInArray}`);
-
-    findSumEvenNumbersInArray(userArr);
-    findSumOddNumbersInArray(userArr);
-   
+    const evenNumbersInArray = filtreEvenNumbersInArray(userArr);
     writingEvenNymbersArray(evenNumbersInArray);
+    
+    const oddNumbersInArray = filtreOddNumbersInArray(userArr);
     writingOddNumbersArray(oddNumbersInArray);
+
+    const sumEvenNumbersInArray = findSumEvenNumbersInArray(evenNumbersInArray);
+    console.log(`\nSum even numbers in an array => ${sumEvenNumbersInArray}`);
+
+    const sumOddNumbersInArray = findSumOddNumbersInArray(oddNumbersInArray);
+    console.log(`\nSum odd numbers in an array => ${sumOddNumbersInArray}`);
 }
 
 main();
