@@ -30,7 +30,7 @@ function filtreEvenNumbersInArray(userArr)
 }
 
 // function for show even numbers in an array
-function writingEvenNymbersArray(evenNumbersArray)
+function writingEvenNumbersArray(evenNumbersArray)
 {
     console.log(`\nYour even numbers array => ${evenNumbersArray.join(", ")}`);
 }
@@ -104,7 +104,7 @@ function main()
     writingArray(userArr);
 
     const evenNumbersInArray = filtreEvenNumbersInArray(userArr);
-    writingEvenNymbersArray(evenNumbersInArray);
+    writingEvenNumbersArray(evenNumbersInArray);
     
     const oddNumbersInArray = filtreOddNumbersInArray(userArr);
     writingOddNumbersArray(oddNumbersInArray);
