@@ -77,10 +77,16 @@ function main()
 
     createArray(userArr, -100, 100);
     writingArray(userArr);
-    filtreEvenNumbersInArray(userArr);
-    filtreOddNumbersInArray(userArr);
+    
+    const evenNumbersInArray =  filtreEvenNumbersInArray(userArr);
+    console.log(`Array with only even numbers => ${evenNumbersInArray}`);
+
+    const oddNumbersInArray = filtreOddNumbersInArray(userArr);
+    console.log(`Array with only odd numbers => ${oddNumbersInArray}`);
+
     findSumEvenNumbersInArray(userArr);
     findSumOddNumbersInArray(userArr);
+   
     writingEvenNymbersArray();
     writingOddNumbersArray();
 }
