@@ -57,15 +57,29 @@ function writingOddNumbersArray(oddNumbersArray)
     console.log(oddNumbersArray.join(", "));
 }
 // function for find sum even numbers in an array
-function findSumEvenNumbersInArray()
+function findSumEvenNumbersInArray(evenNumbersArray)
 {
+    let sumInEvenNumbersArray;
 
+    for (let i = 0; i < evenNumbersArray.length; i++)
+    {
+        sumInEvenNumbersArray += evenNumbersArray[i];
+    }
+
+    return sumInEvenNumbersArray;
 }
 
 // function for find sum odd numbers in an array
-function findSumOddNumbersInArray()
+function findSumOddNumbersInArray(oddNumbersArray)
 {
+    let sumInOddNumbersArray;
 
+    for (let i = 0; i < oddNumbersArray.length; i++)
+    {
+        sumInOddNumbersArray += oddNumbersArray[i];
+    }
+
+    return sumInOddNumbersArray;
 }
 
 function main()
