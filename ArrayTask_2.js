@@ -32,7 +32,6 @@ function filtreEvenNumbersInArray(userArr)
 // function for show even numbers in an array
 function writingEvenNymbersArray(evenNumbersArray)
 {
-    filtreEvenNumbersInArray();
     console.log(evenNumbersArray.join(", "));
 }
 
@@ -55,7 +54,6 @@ function filtreOddNumbersInArray(userArr)
 // function for show odd numbers in an array
 function writingOddNumbersArray(oddNumbersArray)
 {
-    filtreOddNumbersInArray();
     console.log(oddNumbersArray.join(", "));
 }
 // function for find sum even numbers in an array
@@ -87,8 +85,8 @@ function main()
     findSumEvenNumbersInArray(userArr);
     findSumOddNumbersInArray(userArr);
    
-    writingEvenNymbersArray();
-    writingOddNumbersArray();
+    writingEvenNymbersArray(evenNumbersInArray);
+    writingOddNumbersArray(oddNumbersInArray);
 }
 
 main();
