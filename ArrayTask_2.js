@@ -1,9 +1,9 @@
 // function for creating random numbers in an array
-function createArray(userArr)
+function createArray(userArr, min, max)
 {
     for(let i = 0; i < userArr.length; i++)
     {
-        userArr[i] = Math.floor(Math.random);
+        userArr[i] = Math.floor(Math.random() * (max - min + 1)) + min;
     }
 }
 
@@ -42,7 +42,7 @@ function main()
     const sizeArray = 20;
     const userArr = new Array(sizeArray);
 
-    createArray(userArr);
+    createArray(userArr, -100, 100);
     writingArray(userArr);
 }
 
