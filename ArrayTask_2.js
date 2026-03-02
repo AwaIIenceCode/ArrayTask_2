@@ -22,7 +22,7 @@ function filtreEvenNumbersInArray(userArr)
     {
         if (userArr[i] % 2 === 0)
         {
-            evenNumbersArray[i] = userArr[i];
+            evenNumbersArray.push(userArr[i]);
         }
     }
 
@@ -45,7 +45,7 @@ function filtreOddNumbersInArray(userArr)
     {
         if (userArr[i] % 2 !== 0)
         {
-            oddNumbersArray[i] = userArr[i];
+            oddNumbersArray.push(userArr[i]);
         }
     }
 
